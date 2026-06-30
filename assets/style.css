@@ -1,16 +1,16 @@
 :root {
-  --navy: #243447;
-  --navy-dark: #162334;
-  --burnt: #BF5700;
-  --burnt-dark: #8f3f00;
-  --cream: #fbf8f2;
+  --charcoal: #2f3338;
+  --charcoal-dark: #1f2328;
+  --bluegray: #5f7484;
+  --bluegray-dark: #465968;
+  --ivory: #faf8f4;
   --paper: #ffffff;
-  --soft: #f3eee6;
-  --tan: #e8d6bd;
-  --border: #d8d0c5;
+  --stone: #efede8;
+  --stone-dark: #ded8ce;
+  --border: #d6d1c8;
   --text: #111111;
   --muted: #555555;
-  --link: #8f3f00;
+  --link: #3f6174;
 }
 
 * {
@@ -28,8 +28,8 @@ body {
 
 .site-header {
   text-align: center;
-  padding: 30px 16px 22px;
-  background: var(--cream);
+  padding: 31px 16px 23px;
+  background: var(--paper);
   border-bottom: 1px solid var(--border);
 }
 
@@ -37,42 +37,50 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 500;
   font-size: clamp(2.2rem, 4vw, 3.2rem);
-  margin: 0 0 12px;
+  margin: 0 0 11px;
+  letter-spacing: .01em;
 }
 
 .site-header .subtitle {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin: 0;
+  color: #222;
 }
 
 .navbar {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  background: var(--navy);
-  border-bottom: 4px solid var(--burnt);
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  background: var(--charcoal);
+  border-bottom: 1px solid var(--charcoal-dark);
 }
 
 .navbar a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   text-align: center;
-  padding: 12px 8px;
+  padding: 12px 6px;
   display: block;
   font-weight: 700;
   white-space: nowrap;
+  font-size: 0.96rem;
+  border-right: 1px solid rgba(255,255,255,.08);
+}
+
+.navbar a:last-child {
+  border-right: none;
 }
 
 .navbar a:hover,
 .navbar a.active {
-  background: var(--navy-dark);
-  box-shadow: inset 0 -4px 0 var(--burnt);
+  background: var(--bluegray-dark);
+  box-shadow: inset 0 -4px 0 var(--stone-dark);
 }
 
 .hero {
   width: 100%;
   min-height: 410px;
-  background: linear-gradient(135deg, #f2eee7, #d8c3ad);
+  background: linear-gradient(135deg, #f7f5ef, #ded7cd);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,7 +127,7 @@ body {
 
 .profile-card {
   border: 1px solid var(--border);
-  background: var(--cream);
+  background: var(--ivory);
   padding: 18px;
 }
 
@@ -147,7 +155,7 @@ body {
 .profile-card h2 {
   margin-top: 0;
   font-size: 1.3rem;
-  color: var(--navy);
+  color: var(--charcoal);
 }
 
 .profile-card ul {
@@ -176,7 +184,7 @@ body {
 
 .feature {
   border: 1px solid var(--border);
-  background: var(--cream);
+  background: var(--ivory);
   padding: 18px;
   display: flex;
   flex-direction: column;
@@ -186,7 +194,7 @@ body {
   font-size: 1.28rem;
   font-weight: 600;
   margin: 0 0 10px;
-  color: var(--navy);
+  color: var(--charcoal);
 }
 
 .feature p {
@@ -204,7 +212,7 @@ body {
   height: 220px;
   object-fit: cover;
   border: 1px solid var(--border);
-  background: var(--soft);
+  background: var(--stone);
   margin-top: 12px;
 }
 
@@ -212,7 +220,7 @@ body {
   width: 100%;
   height: 220px;
   border: 1px solid var(--border);
-  background: #ede6dc;
+  background: var(--stone);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +253,7 @@ body {
 .project-card,
 .course-card,
 .field-card {
-  background: var(--cream);
+  background: var(--ivory);
   border: 1px solid var(--border);
   padding: 18px;
   display: flex;
@@ -255,7 +263,7 @@ body {
 .course-card h2,
 .project-card h2,
 .field-card h2 {
-  background: var(--tan);
+  background: var(--stone-dark);
   margin: -18px -18px 16px;
   padding: 18px;
   border-bottom: 1px solid var(--border);
@@ -280,8 +288,8 @@ body {
 
 .button {
   display: inline-block;
-  border: 1px solid var(--burnt-dark);
-  color: var(--burnt-dark);
+  border: 1px solid var(--bluegray-dark);
+  color: var(--bluegray-dark);
   padding: 8px 13px;
   text-decoration: none;
   margin: 0 8px 8px 0;
@@ -289,7 +297,7 @@ body {
 }
 
 .button:hover {
-  background: var(--soft);
+  background: var(--stone);
 }
 
 .cv-page {
@@ -303,7 +311,7 @@ body {
 .cv-entry h3 {
   margin: 0 0 5px;
   font-size: 1.1rem;
-  color: var(--navy);
+  color: var(--charcoal);
 }
 
 .cv-section {
@@ -324,23 +332,29 @@ body {
   text-align: center;
   padding: 24px 16px;
   font-size: .95rem;
-  background: var(--cream);
+  background: var(--ivory);
 }
 
 .note {
-  background: #fff8e8;
-  border: 1px solid #e5d4a8;
+  background: #f4f1ea;
+  border: 1px solid var(--border);
   padding: 14px;
-  color: #4a412d;
+  color: #333;
 }
 
 a {
   color: var(--link);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 980px) {
   .navbar {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .home-grid,
   .three-col,
