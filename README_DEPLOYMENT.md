@@ -1,29 +1,30 @@
-# Minimal Academic Website for Chris J. Ploetz
+# Chris J. Ploetz Centered Academic Website
 
-This version is intentionally modeled after a clean academic GitHub Pages site: simple header, horizontal navigation, concise pages, and minimal styling.
+This version is designed to feel closer to a clean academic faculty website:
+centered name/title, green navigation bar, large homepage image, and a lower bio/headshot section.
 
-## Important files
+## Files to upload to GitHub
 
-- `index.html` — About / homepage
-- `research.html`
-- `teaching.html`
-- `fieldwork.html`
-- `publications.html`
-- `contact.html`
-- `assets/style.css`
-- `assets/Chris_Ploetz_CV.docx`
+Upload all files and the assets folder to the root of your GeoPloetz.github.io repository.
 
-## To update the homepage image
+## Add homepage image
 
-1. Add an image named `homepage.jpg` to the `assets` folder.
-2. In `index.html`, replace the current `<div class="hero-image">...</div>` block with:
+Place a wide image at:
 
-```html
-<div class="hero-image has-image">
-  <img src="assets/homepage.jpg" alt="Chris Ploetz fieldwork image">
-</div>
-```
+assets/homepage.jpg
 
-## Deployment
+Then replace the hero placeholder in index.html with:
 
-Upload these files to the root of your `GeoPloetz.github.io` repository.
+<section class="hero has-image">
+  <img src="assets/homepage.jpg" alt="Belize landscape or fieldwork image">
+</section>
+
+## Add headshot
+
+Place a square/portrait image at:
+
+assets/headshot.jpg
+
+Then replace the headshot placeholder in index.html with:
+
+<img src="assets/headshot.jpg" alt="Chris J. Ploetz">
