@@ -1,11 +1,17 @@
-# Chris J. Ploetz Centered Academic Website
+# Chris Ploetz Academic Website Update
 
-This version is designed to feel closer to a clean academic faculty website:
-centered name/title, green navigation bar, large homepage image, and a lower bio/headshot section.
+This version includes:
+- Chris Ploetz without middle initial
+- Professional slate/navy + muted burnt-orange palette
+- CAVE Lab as its own tab
+- CV as a readable webpage rather than direct download only
+- Fieldwork categories: Belize, Guatemala, Honduras, Community Engagement
+- Aligned homepage feature cards
 
-## Files to upload to GitHub
+## Upload instructions
 
-Upload all files and the assets folder to the root of your GeoPloetz.github.io repository.
+Upload all files and the assets folder to the root of the GeoPloetz.github.io repository.
+Keep the existing CNAME file in GitHub.
 
 ## Add homepage image
 
@@ -27,4 +33,4 @@ assets/headshot.jpg
 
 Then replace the headshot placeholder in index.html with:
 
-<img src="assets/headshot.jpg" alt="Chris J. Ploetz">
+<img src="assets/headshot.jpg" alt="Chris Ploetz">
